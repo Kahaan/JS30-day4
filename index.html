@@ -68,18 +68,18 @@
     arr = s.split("")
     result = []
     chunk = []
-  //   arr.map((el) =>{
-  //     if (!result.includes(el)){
-  //       chunk.push(el)
-  //     } else {
-  //       console.log(el)
-  //       result = result.push(chunk.join(""))
-  //       chunk = []
-  //     }
-  //   })
-  //   result.push(chunk.join(""))
-  //   console.log(result)
-  // }
+    arr.map((el) =>{
+      if (!result.includes(el)){
+        chunk.push(el)
+      } else {
+        console.log(el)
+        result = result.push(chunk.join(""))
+        chunk = []
+      }
+    })
+    result.push(chunk.join(""))
+    console.log(result)
+  }
 
 
   </script>
