@@ -118,6 +118,15 @@ function FirstFactorial(num) {
 
 }
 
+function SimpleAdding(num) {
+    range = []
+    for(i = 1;i <= num; i++){
+        range.push(i)
+    }
+  return range.reduce((acc,el) => (acc + el), 0)
+}
+
+
 
   </script>
 </body>
