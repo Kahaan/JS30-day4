@@ -101,6 +101,19 @@
     return JSON.stringify(arr.reverse()) === JSON.stringify(str.split(""))
   }
 
+  function LongestWord(sen) {
+  words = sen.split(" ")
+  words.sort((a,b) => (a.length > b.length ? 1 : -1))
+  largestTwo = words.slice(words.length - 2, words.length)
+
+  if (largestTwo[0].length === largestTwo[1].length) {
+    return largestTwo[0]
+  }
+  return largestTwo[1]
+}
+
+
+
 
   </script>
 </body>
