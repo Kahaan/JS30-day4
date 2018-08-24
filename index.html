@@ -88,18 +88,18 @@
     for(i = 0; i < s.length; i++){
       for(j = i; j < s.length; j++){
         arr.push(s.slice(i,j))
-  //     }
-  //   }
-  //   arr = arr.filter((el) => ((el !== '')&&(isPalindrome(el))))
-  //
-  //   arr.sort((a,b) => (a.length > b.length ? 1 : -1))
-  //   return (arr[arr.length - 1])
-  // };
-  //
-  // var isPalindrome = function(str){
-  //   arr = str.split("")
-  //   return JSON.stringify(arr.reverse()) === JSON.stringify(str.split(""))
-  // }
+      }
+    }
+    arr = arr.filter((el) => ((el !== '')&&(isPalindrome(el))))
+
+    arr.sort((a,b) => (a.length > b.length ? 1 : -1))
+    return (arr[arr.length - 1])
+  };
+
+  var isPalindrome = function(str){
+    arr = str.split("")
+    return JSON.stringify(arr.reverse()) === JSON.stringify(str.split(""))
+  }
 
 
   </script>
