@@ -145,6 +145,21 @@ function ABCheck(str) {
   return "false"
 }
 
+function VowelCount(str) {
+  const vowels = "aeiou"
+  arr = str.toLowerCase().split("")
+  return arr.reduce(function(acc,el){
+    if (vowels.includes(el)){
+      return acc += 1
+    } else {
+      return acc
+    }
+  }, 0)
+  return arr
+}
+
+// When using reduce remember that the callback function requiresa return statement or it won't work
+// Also why you need to return the acc in the else clause
 
 
 
