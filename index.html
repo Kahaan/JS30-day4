@@ -162,7 +162,15 @@ function WordCount(str) {
     words = str.split(" ")
     return words.length
 }
-   
+
+function ExOh(str) {
+  let hsh = {}
+  str.toLowerCase().split("").map((el) => {
+    hsh[el] !== undefined ? hsh[el] += 1 : hsh[el] = 1
+  })
+  return hsh["x"] === hsh["o"] ? "true" : "false"
+}
+
 
 // When using reduce remember that the callback function requiresa return statement or it won't work
 // Also why you need to return the acc in the else clause
