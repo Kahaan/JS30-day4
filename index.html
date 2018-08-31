@@ -166,13 +166,13 @@ function WordCount(str) {
     return words.length
 }
 
-// function ExOh(str) {
-//   let hsh = {}
-//   str.toLowerCase().split("").map((el) => {
-//     hsh[el] !== undefined ? hsh[el] += 1 : hsh[el] = 1
-//   })
-//   return hsh["x"] === hsh["o"] ? "true" : "false"
-// }
+function ExOh(str) {
+  let hsh = {}
+  str.toLowerCase().split("").map((el) => {
+    hsh[el] !== undefined ? hsh[el] += 1 : hsh[el] = 1
+  })
+  return hsh["x"] === hsh["o"] ? "true" : "false"
+}
 //
 // function Palindrome(str) {
 //   arr = str.split(" ").join("").split("")
