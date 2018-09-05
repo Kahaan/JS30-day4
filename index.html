@@ -180,6 +180,35 @@ function Palindrome(str) {
 }
 
 
+function LetterCountI(str) {
+
+  words = str.split(" ")
+  words.sort((a,b) => (numberRepeats(b) - numberRepeats(a)))
+
+  if (numberRepeats(words[0]) === -1) return -1
+
+  return words[0]
+
+}
+
+function numberRepeats(word){
+  word = word.toLowerCase().split("")
+  letters = {}
+  word.forEach(function(el){
+    if (letters[el] !== undefined){
+      letters[el] += 1
+    } else {
+      letters[el] = 1
+    }
+  })
+
+  let nums =  Object.values(letters).sort()
+  if (nums[nums.length - 1] == 1) {
+    return -1
+  }
+
+  return nums[nums.length - 1]
+}
 
 
 
